@@ -1,0 +1,18 @@
+name: test
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  install:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Scoop and MatRust from this bucket
+        shell: pwsh
+        run: |
+          Invoke-RestMethod get.scoop.sh -OutFile install.ps1
+          .\install.ps1 -RunAsAdmin
+          $env:PATH = "$env:USERPROFILE\scoop\shims;$env:PATH"
+          scoop install .\bucket\matrust.json
+          $out = matrust --eval "sum([1 2 3])" | Out-String
+          Write-Output $out
+          if ($out -notmatch 'ans =\s+6') { throw 'matrust did not run' }
+          if (-not (Test-Path "$env:USERPROFILE\scoop\apps\matrust\current\matrust-pdf-worker.exe")) { throw 'pdf worker missing' }
