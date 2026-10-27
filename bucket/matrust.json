@@ -1,13 +1,13 @@
 {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "MATLAB-compatible numerical engine and desktop workspace",
     "homepage": "https://matrust.dev",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/leoom-labs/matrust/releases/download/v0.1.0/MatRust-0.1.0-windows-x64.zip",
-            "hash": "adf175f6f839b4b984b714b84dd3ed5d5673218bccb3ae7f5007493a0dd2722b",
-            "extract_dir": "MatRust-0.1.0-windows-x64"
+            "url": "https://github.com/leoom-labs/matrust/releases/download/v0.1.1/MatRust-0.1.1-windows-x64.zip",
+            "hash": "544d7b53bfa247c78cace80dd413c7485a6a0a6cabc4b1222be0d2c2f32425ca",
+            "extract_dir": "MatRust-0.1.1-windows-x64"
         }
     },
     "bin": [
