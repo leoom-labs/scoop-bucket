@@ -1,6 +1,6 @@
 {
     "version": "0.1.1",
-    "description": "MATLAB-compatible numerical engine and desktop workspace",
+    "description": "Numerical workspace that runs a subset of the MATLAB language",
     "homepage": "https://matrust.dev",
     "license": "GPL-3.0-or-later",
     "architecture": {
