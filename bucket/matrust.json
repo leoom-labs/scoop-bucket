@@ -1,13 +1,13 @@
 {
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Numerical workspace that runs a subset of the MATLAB language",
     "homepage": "https://matrust.dev",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/leoom-labs/matrust/releases/download/v0.1.1/MatRust-0.1.1-windows-x64.zip",
-            "hash": "544d7b53bfa247c78cace80dd413c7485a6a0a6cabc4b1222be0d2c2f32425ca",
-            "extract_dir": "MatRust-0.1.1-windows-x64"
+            "url": "https://github.com/leoom-labs/matrust/releases/download/v0.1.2/MatRust-0.1.2-windows-x64.zip",
+            "hash": "7200f3f2c81ceb6bb37b5b7b2e6b3d2f1656218dce2236e5d723f933727355a5",
+            "extract_dir": "MatRust-0.1.2-windows-x64"
         }
     },
     "bin": [
